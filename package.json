@@ -1,0 +1,27 @@
+{
+  "name": "xpr-seeg",
+  "version": "1.0.0",
+  "description": "A small package built on top of express for running stereo eeg analysis pipelines",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/biolab-unige/xpr-seeg.git"
+  },
+  "keywords": [
+    "seeg",
+    "computational",
+    "neurocience"
+  ],
+  "author": "Massimiliano Izzo",
+  "license": "BSD",
+  "bugs": {
+    "url": "https://github.com/biolab-unige/xpr-seeg/issues"
+  },
+  "homepage": "https://github.com/biolab-unige/xpr-seeg",
+  "dependencies": {
+    "express": "^4.10.4"
+  }
+}
