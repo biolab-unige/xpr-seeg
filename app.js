@@ -15,7 +15,7 @@ app.post('/runCtSegmentation', function(req, res) {
     var irodsRestURL = irodsConf.irodsRest.hostname + ":" + irodsConf.irodsRest.port + irodsConf.irodsRest.path;
 
     var command = spawn(__dirname + '/test_bash.sh', [ctFilePath, fiducialsFilePath, irodsRestURL, irodsConf.username, irodsConf.password]);
-
+    res.sendStatus();
     var output = [];
 
     command.stdout.on('data', function(chunk) {
@@ -24,7 +24,7 @@ app.post('/runCtSegmentation', function(req, res) {
 
     command.on('close', function(resp) {
         console.log(resp);
-        res.json({uri: resp});
+       // res.json({uri: resp});
     });
     
 });

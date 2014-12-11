@@ -2,8 +2,9 @@
 
 usage()
 
-REST_PATH=$2
-URI=$3
+CT_PATH=$1
+FIDUCIAL_LIST_PATH=$2
+REST_URL=$3
 USER=$4
 PASS=$5
 
@@ -11,9 +12,9 @@ PASS=$5
 
 
 #iget 
-wget 130.251.10.60:8080/irods-rest-4.0.2.1-SNAPSHOT/rest/fileContents/biolabZone/home/superbiorods/eegtest/seeg-new.fcsv -O /tmp/seeg.fcsv --user superbiorods --password superbio05!
+wget $3/fileContents/$1 -O /tmp/seeg.fcsv --user $4 --password $5
 
-wget 130.251.10.60:8080/irods-rest-4.0.2.1-SNAPSHOT/rest/fileContents/biolabZone/home/superbiorods/eegtest/r_oarm_seeg_cleaned.nii.gz -O /tmp/r_oarm.nii.gz --user superbiorods --password superbio05!
+wget $3/fileContents/$2 -O /tmp/r_oarm.nii.gz --user $4 --password $5
 
 NII=/tmp/r_oarm.nii.gz
 FCV=/tmp/seeg.fcsv
