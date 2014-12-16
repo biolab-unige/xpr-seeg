@@ -12,9 +12,9 @@ PASS=$5
 
 
 #iget 
-wget $3/fileContents/$1 -O /tmp/seeg.fcsv --user $4 --password $5
+wget $3fileContents$1 -O /tmp/seeg.fcsv --user $4 --password $5
 
-wget $3/fileContents/$2 -O /tmp/r_oarm.nii.gz --user $4 --password $5
+wget $3fileContents$2 -O /tmp/r_oarm.nii.gz --user $4 --password $5
 
 NII=/tmp/r_oarm.nii.gz
 FCV=/tmp/seeg.fcsv

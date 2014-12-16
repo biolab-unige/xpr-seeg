@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/biolab-unige/xpr-seeg",
   "dependencies": {
-    "express": "^4.10.4"
+    "express": "^4.10.4",
+    "lodash": "^2.4.1"
   }
 }
